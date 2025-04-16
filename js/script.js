@@ -66,3 +66,45 @@ function menuClose() {
 }
 
 menuInit();
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 50) {
+    header.classList.add("header--scrolled");
+  } else {
+    header.classList.remove("header--scrolled");
+  }
+});
+
+//========================================================================================================================================================
+
+const sections = document.querySelectorAll("section[id]");
+const menuLinks = document.querySelectorAll(".menu__link");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        menuLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${entry.target.id}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  }
+);
+
+sections.forEach((section) => observer.observe(section));
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (document.documentElement.classList.contains("menu-open")) {
+      menuClose();
+    }
+  });
+});

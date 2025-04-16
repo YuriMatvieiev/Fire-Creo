@@ -14,19 +14,19 @@
           <nav class="menu__body">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="" class="menu__link active">Главная</a>
+                <a href="#home" class="menu__link active">Главная</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Услуги</a>
+                <a href="#services" class="menu__link">Услуги</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Пакеты </a>
+                <a href="#packages" class="menu__link">Пакеты </a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Сотрудничество</a>
+                <a href="#partner" class="menu__link">Сотрудничество</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Канал</a>
+                <a href="#channel" class="menu__link">Канал</a>
               </li>
             </ul>
           </nav>
@@ -37,7 +37,29 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section id="home" class="hero">
+        <img src="./img/coin-top-left.png" alt="" class="hero__coin-top-left" />
+        <img src="./img/coin-mid-left.png" alt="" class="hero__coin-mid-left" />
+        <img
+          src="./img/coin-bottom-left.png"
+          alt=""
+          class="hero__coin-bottom-left"
+        />
+        <img
+          src="./img/coin-top-right.png"
+          alt=""
+          class="hero__coin-top-right"
+        />
+        <img
+          src="./img/coin-mid-right.png"
+          alt=""
+          class="hero__coin-mid-right"
+        />
+        <img
+          src="./img/coin-bottom-right.png"
+          alt=""
+          class="hero__coin-bottom-right"
+        />
         <div class="hero__bg">
           <video autoplay muted loop playsinline class="hero__video">
             <source src="./img/video.mp4" type="video/mp4" />
@@ -45,36 +67,6 @@
             Your browser does not support the video tag.
           </video>
           <img class="hero__bg-img" src="./img/hero-bg.png" alt="Image" />
-          <img
-            src="./img/coin-top-left.png"
-            alt=""
-            class="hero__coin-top-left"
-          />
-          <img
-            src="./img/coin-mid-left.png"
-            alt=""
-            class="hero__coin-mid-left"
-          />
-          <img
-            src="./img/coin-bottom-left.png"
-            alt=""
-            class="hero__coin-bottom-left"
-          />
-          <img
-            src="./img/coin-top-right.png"
-            alt=""
-            class="hero__coin-top-right"
-          />
-          <img
-            src="./img/coin-mid-right.png"
-            alt=""
-            class="hero__coin-mid-right"
-          />
-          <img
-            src="./img/coin-bottom-right.png"
-            alt=""
-            class="hero__coin-bottom-right"
-          />
         </div>
         <div class="hero__container">
           <div class="hero__top">
@@ -136,10 +128,187 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="hero__button">
+            <a href="https://t.me/fire_creo" class="hero__button">
               <img src="./img/tg.png" alt="Image" />
               Перейти на канал
             </a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="services__container">
+          <h2 class="main-title services__title">наши услуги</h2>
+          <div class="services__wrap">
+            <div class="services__wrap-2cols">
+              <div class="services__item">
+                <h3 class="common-title services__item-title">
+                  <span>Моушн-дизайн</span> <span> монтаж </span>
+                </h3>
+                <ul class="services__list">
+                  <li>
+                    Создание креативов для гемблинга, беттинга и других
+                    вертикалей
+                  </li>
+                  <li>Креативы с использованием DeepFake / Lip Sync</li>
+                </ul>
+              </div>
+              <div class="services__item">
+                <h3 class="common-title services__item-title">
+                  <span>Веб-</span><span>дизайн</span>
+                </h3>
+                <ul class="services__list">
+                  <li>Отрисовка дизайна лендингов и прелендингов</li>
+                  <li>
+                    Отрисовка интерфейса приложений: меню, игровые уровни,
+                    кнопки, элементы
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="services__item">
+              <h3 class="common-title services__item-title">
+                Графический дизайн
+              </h3>
+              <ul class="services__list">
+                <li>
+                  Статичные креативы для гемблинга, беттинга и других вертикалей
+                </li>
+                <li>
+                  Создание картинок для постов, аватарок и прочее оформление
+                </li>
+                <li>Оформление и дизайн для Google Play / App Store</li>
+                <li>Оформление и дизайн PWA приложений</li>
+              </ul>
+            </div>
+            <div class="services__item">
+              <h3 class="common-title services__item-title">Другое</h3>
+              <ul class="services__list">
+                <li>
+                  Реализация задач под ключ — по вашему техническому заданию или
+                  в креативном формате
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="packages" class="packages">
+        <div class="packages__container">
+          <h2 class="main-title packages__title">пакеты</h2>
+          <div class="packages__wrap">
+            <div class="packages__item">
+              <img
+                src="./img/package-1.png"
+                class="packages__image"
+                alt="Image"
+              />
+              <a href="#channel" class="packages__button">
+                выбрать <span class="yellow-text">“BASE”</span>
+              </a>
+            </div>
+            <div class="packages__item">
+              <img
+                src="./img/package-2.png"
+                class="packages__image"
+                alt="Image"
+              />
+              <a href="#channel" class="packages__button">
+                выбрать <span class="yellow-text">“Pro”</span>
+              </a>
+            </div>
+            <div class="packages__item">
+              <img
+                src="./img/package-3.png"
+                class="packages__image"
+                alt="Image"
+              />
+              <a href="#channel" class="packages__button">
+                выбрать <span class="yellow-text">“Maximum”</span>
+              </a>
+            </div>
+            <div class="packages__item">
+              <img
+                src="./img/package-4.png"
+                class="packages__image"
+                alt="Image"
+              />
+              <a href="#channel" class="packages__button">
+                выбрать <span class="yellow-text">“Custom”</span>
+              </a>
+            </div>
+          </div>
+          <div class="packages__desc">
+            Расскажите, что вам нужно — и мы соберем предложение под вас
+          </div>
+        </div>
+      </section>
+      <section id="partner" class="partner">
+        <div class="partner__container">
+          <h2 class="main-title partner__title">сотрудничество</h2>
+          <div class="partner__wrap">
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">Всё в одном месте</h3>
+              <p class="partner__text">
+                Видео, статика, дизайн для приложений и интерфейсов. Не нужно
+                искать специалистов, мы закроем все задачи.
+              </p>
+            </div>
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">Экономия</h3>
+              <p class="partner__text">
+                Не тратьте деньги на найм и обучение команды. Получайте готовые
+                решения без лишних затрат.
+              </p>
+            </div>
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">
+                Быстрота и гибкость
+              </h3>
+              <p class="partner__text">
+                Работаем оперативно, подстраиваемся под задачи и обеспечиваем
+                бесперебойный процесс.
+              </p>
+            </div>
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">Экспертиза</h3>
+              <p class="partner__text">
+                Глубокое понимание гемблинга и беттинга, актуальные подходы и
+                проверенные решения.
+              </p>
+            </div>
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">Бесплатные правки</h3>
+              <p class="partner__text">Возможность вносить 3 этапа правок.</p>
+            </div>
+          </div>
+          <div class="packages__desc">
+            Fire Creo — ваш надежный партнер в создании креативов
+          </div>
+        </div>
+      </section>
+      <section id="channel" class="channel">
+        <div class="channel__container">
+          <h2 class="main-title channel__title">канал</h2>
+          <div class="channel__wrap">
+            <div class="channel__left">
+              <div class="channel__text">
+                Все актуальные креативы, лучшие кейсы и свежие работы — смотри в
+                нашем канале.
+              </div>
+              <div class="channel__buttons">
+                <a href="https://t.me/fire_creo" class="hero__button">
+                  <img src="./img/tg.png" alt="Image" />
+                  Перейти на канал
+                </a>
+                <a href="https://t.me/firecreomanager" class="hero__button">
+                  <img src="./img/tg.png" alt="Image" />
+                  связаться с нами
+                </a>
+              </div>
+            </div>
+            <div class="channel__right">
+              <img src="./img/tg-fire.png" class="channel__image" alt="Image" />
+            </div>
           </div>
         </div>
       </section>
