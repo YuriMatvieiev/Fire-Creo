@@ -165,7 +165,7 @@ body {
 }
 
 [class*=__container] {
-  max-width: 1730px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -206,13 +206,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 36px;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .menu__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -220,7 +220,7 @@ body {
   }
 }
 .menu__link {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 120%;
   font-family: "Montserrat";
   font-weight: 500;
@@ -241,11 +241,10 @@ body {
 }
 @media (any-hover: hover) {
   .menu__link:hover {
-    color: var(--yellow);
     text-decoration: underline !important;
   }
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .menu__link {
     font-size: 28px;
   }
@@ -370,7 +369,7 @@ body {
   overflow: hidden;
   scroll-margin-top: 130px;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero {
     padding-bottom: 80px;
   }
@@ -522,7 +521,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -537,16 +536,16 @@ body {
   }
 }
 .hero__left {
-  max-width: 860px;
+  max-width: 750px;
   margin-top: 60px;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero__left {
     margin-top: 30px;
   }
 }
 .hero__title span {
-  font-size: 96px;
+  font-size: 80px;
   line-height: 110%;
   text-transform: uppercase;
   background: var(--gradient);
@@ -554,7 +553,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero__title span {
     font-size: 60px;
   }
@@ -569,7 +568,7 @@ body {
     font-size: 36px;
   }
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero__title {
     text-align: center;
   }
@@ -583,7 +582,7 @@ body {
           align-items: center;
   gap: 50px;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero__title-wrap {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -617,16 +616,16 @@ body {
 .hero__desc {
   margin-top: 50px;
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 500;
 }
 .hero__desc span {
   text-shadow: 2px 2px 3px #000;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
   text-transform: uppercase;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero__desc {
     text-align: center;
   }
@@ -655,10 +654,10 @@ body {
   height: 529.468px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-right: 115px;
+  margin-right: 60px;
   margin-top: 20px;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero__right {
     margin: 0;
   }
@@ -694,7 +693,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .hero__items {
     grid-template-columns: repeat(1, minmax(300px, 700px));
     -webkit-box-pack: center;
@@ -710,7 +709,7 @@ body {
           backdrop-filter: blur(5px);
   padding: 40px 20px;
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
   text-transform: uppercase;
   line-height: 110%;
   display: -webkit-box;
@@ -756,7 +755,7 @@ body {
   padding: 0 51px 0 0;
   color: var(--text-color);
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -845,9 +844,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 95px;
+  gap: 90px;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .services__wrap {
     gap: 20px;
   }
@@ -859,20 +858,20 @@ body {
 }
 .services__wrap-2cols {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 800px));
+  grid-template-columns: repeat(2, minmax(300px, 650px));
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 20px;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .services__wrap-2cols {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 .services__item {
   position: relative;
-  padding: 65px 50px;
+  padding: 50px 30px;
   background: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -903,7 +902,7 @@ body {
   border-radius: 30px;
 }
 .services__item-title {
-  font-size: 48px;
+  font-size: 36px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -920,10 +919,10 @@ body {
   margin-top: 55px;
   text-shadow: 2px 2px 3px #000;
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 500;
-  -webkit-padding-start: 60px;
-          padding-inline-start: 60px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
 }
 @media (max-width: 991.98px) {
   .services__list {
@@ -960,12 +959,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 80px;
+  font-size: 70px;
   text-transform: uppercase;
   line-height: 110%;
   text-align: center;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .main-title {
     font-size: 55px;
   }
@@ -978,7 +977,7 @@ body {
 
 .common-title {
   text-transform: uppercase;
-  line-height: 110%;
+  line-height: 125%;
   background: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1016,7 +1015,7 @@ body {
 .packages__wrap {
   margin-top: 100px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 800px));
+  grid-template-columns: repeat(2, minmax(300px, 650px));
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1051,7 +1050,7 @@ body {
   width: 100%;
   display: block;
   color: #fff;
-  font-size: 48px;
+  font-size: 36px;
   text-transform: uppercase;
   text-align: center;
   display: -webkit-box;
@@ -1074,7 +1073,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .packages__button {
     font-size: 36px;
   }
@@ -1110,7 +1109,7 @@ body {
   border-radius: 100px;
 }
 .packages__desc {
-  font-size: 48px;
+  font-size: 40px;
   margin-top: 100px;
   text-transform: uppercase;
   text-align: center;
@@ -1153,7 +1152,7 @@ body {
   }
 }
 .partner__subtitle {
-  font-size: 36px;
+  font-size: 34px;
 }
 @media (max-width: 767.98px) {
   .partner__subtitle {
@@ -1164,7 +1163,7 @@ body {
   margin-top: 30px;
   text-shadow: 2px 2px 3px #000;
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 120%;
 }
@@ -1193,7 +1192,7 @@ body {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .channel__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1209,7 +1208,7 @@ body {
   max-width: 920px;
   margin-top: 100px;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .channel__left {
     margin: 0;
   }
@@ -1217,14 +1216,18 @@ body {
 .channel__text {
   text-shadow: 2px 2px 3px #000;
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 120%;
+}
+@media (max-width: 991.98px) {
+  .channel__text {
+    text-align: center;
+  }
 }
 @media (max-width: 767.98px) {
   .channel__text {
     font-size: 20px;
-    text-align: center;
   }
 }
 .channel__buttons {
@@ -1241,7 +1244,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media (max-width: 1439.98px) {
+@media (max-width: 1219.98px) {
   .channel__buttons {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1272,6 +1275,8 @@ body {
 }
 @media (max-width: 479.98px) {
   .channel__image {
-    width: 100%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
   }
 }
