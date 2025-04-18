@@ -17,7 +17,7 @@
 :root {
   scroll-behavior: smooth;
 }
-$pc: 1219.98px;
+$pc: 1000.98px;
 $tablet: 991.98px;
 $mobile: 767.98px;
 $mobileSmall: 479.98px;
@@ -40,7 +40,7 @@ body {
 }
 
 [class*="__container"] {
-  max-width: 1460px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 40px;
   @media (max-width: $mobile) {
@@ -84,11 +84,16 @@ body {
   &__list {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 32px;
     margin: 0 auto;
     justify-content: center;
-    @media (max-width: $pc) {
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "Montserrat";
+    font-weight: 500;
+    @media (max-width: $tablet) {
       justify-content: center;
+      font-size: 28px;
     }
   }
   // .menu__item
@@ -96,10 +101,6 @@ body {
   }
   // .menu__link
   &__link {
-    font-size: 28px;
-    line-height: 120%;
-    font-family: "Montserrat";
-    font-weight: 500;
     color: var(--text-color);
     text-decoration-style: solid;
     text-decoration-thickness: 13.5%; /* 4.32px */
@@ -115,9 +116,6 @@ body {
       &:hover {
         text-decoration: underline !important;
       }
-    }
-    @media (max-width: $pc) {
-      font-size: 28px;
     }
   }
   // .menu__icon
@@ -246,11 +244,11 @@ body {
 
 .hero {
   padding-bottom: 100px;
-  padding-top: 130px;
+  padding-top: 100px;
   position: relative;
   overflow: hidden;
-  scroll-margin-top: 130px;
-  @media (max-width: $pc) {
+  scroll-margin-top: 110px;
+  @media (max-width: $tablet) {
     padding-bottom: 80px;
   }
   @media (max-width: $tablet) {
@@ -284,6 +282,7 @@ body {
   &__coin-top-left {
     position: absolute;
     top: -20px;
+    width: 265px;
     left: -130px;
     z-index: 3;
     animation: floatY 3s ease-in-out infinite;
@@ -297,6 +296,7 @@ body {
     position: absolute;
     top: 50%;
     left: -20px;
+    width: 100px;
     z-index: 3;
     animation: floatX 4s ease-in-out infinite;
     @media (max-width: $tablet) {
@@ -309,6 +309,7 @@ body {
     position: absolute;
     top: 75%;
     left: -20px;
+    width: 280px;
     z-index: 3;
     animation: floatY 2s ease-in-out infinite;
     @media (max-width: $tablet) {
@@ -322,6 +323,7 @@ body {
     position: absolute;
     top: 4%;
     right: 50px;
+    width: 150px;
     z-index: 3;
     animation: floatX 3.5s ease-in-out infinite;
     @media (max-width: $tablet) {
@@ -335,6 +337,7 @@ body {
     position: absolute;
     top: 19%;
     right: -190px;
+    width: 400px;
     z-index: 3;
     animation: floatY 3s ease-in-out infinite;
     @media (max-width: $tablet) {
@@ -348,6 +351,7 @@ body {
     position: absolute;
     top: 74%;
     right: -35px;
+    width: 160px;
     z-index: 3;
     animation: floatX 2s ease-in-out infinite;
     @media (max-width: $tablet) {
@@ -373,8 +377,8 @@ body {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    align-items: center;
-    @media (max-width: $pc) {
+
+    @media (max-width: $tablet) {
       flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
@@ -382,23 +386,23 @@ body {
   }
   // .hero__left
   &__left {
-    max-width: 750px;
-    margin-top: 60px;
-    @media (max-width: $pc) {
+    max-width: 520px;
+    margin-top: 85px;
+    @media (max-width: $tablet) {
       margin-top: 30px;
     }
   }
   // .hero__title
   &__title {
     span {
-      font-size: 80px;
+      font-size: 60px;
       line-height: 110%;
       text-transform: uppercase;
       background: var(--gradient);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      @media (max-width: $pc) {
+      @media (max-width: $tablet) {
         font-size: 60px;
       }
       @media (max-width: $mobile) {
@@ -408,15 +412,15 @@ body {
         font-size: 36px;
       }
     }
-    @media (max-width: $pc) {
+    @media (max-width: $tablet) {
       text-align: center;
     }
 
     &-wrap {
       display: flex;
       align-items: center;
-      gap: 50px;
-      @media (max-width: $pc) {
+      gap: 40px;
+      @media (max-width: $tablet) {
         justify-content: center;
         margin-top: 4px;
       }
@@ -430,27 +434,29 @@ body {
   &__title-images {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
   }
   // .hero__title-image
   &__title-image {
+    width: 60px;
     @media (max-width: $mobile) {
       width: 50px;
     }
   }
   // .hero__desc
   &__desc {
-    margin-top: 50px;
+    margin-top: 32px;
     font-family: "Montserrat";
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 500;
+    line-height: 150%;
     span {
       text-shadow: 2px 2px 3px #000;
-      font-size: 42px;
+      font-size: 32px;
       font-weight: 700;
       text-transform: uppercase;
     }
-    @media (max-width: $pc) {
+    @media (max-width: $tablet) {
       text-align: center;
     }
     @media (max-width: $mobile) {
@@ -471,12 +477,11 @@ body {
   }
   // .hero__right
   &__right {
-    width: 513.713px;
-    height: 529.468px;
+    width: 370px;
     flex-shrink: 0;
     margin-right: 60px;
     margin-top: 20px;
-    @media (max-width: $pc) {
+    @media (max-width: $tablet) {
       margin: 0;
     }
     @media (max-width: $mobile) {
@@ -490,7 +495,7 @@ body {
 
   // .hero__bottom
   &__bottom {
-    margin-top: 70px;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -498,11 +503,11 @@ body {
   // .hero__items
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 500px));
-    gap: 40px;
+    grid-template-columns: repeat(3, minmax(200px, 330px));
+    gap: 30px;
     width: 100%;
     justify-content: space-between;
-    @media (max-width: $pc) {
+    @media (max-width: $tablet) {
       grid-template-columns: repeat(1, minmax(300px, 700px));
       justify-content: center;
     }
@@ -514,9 +519,9 @@ body {
     background: rgba(0, 0, 0, 0.3);
 
     backdrop-filter: blur(5px);
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 23px;
     text-transform: uppercase;
     line-height: 110%;
     display: flex;
@@ -542,7 +547,7 @@ body {
   }
   // .hero__button
   &__button {
-    margin-top: 100px;
+    margin-top: 75px;
     background: var(--blue);
     border-radius: 100px;
     display: flex;
@@ -550,9 +555,13 @@ body {
     padding: 0 51px 0 0;
     color: var(--text-color);
     font-family: "Montserrat";
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
+    transition: all 0.3s;
+    img {
+      width: 85px;
+    }
     @media (max-width: $mobile) {
       font-size: 22px;
       margin-top: 60px;
@@ -564,6 +573,14 @@ body {
       padding: 0 20px 0 0;
       img {
         width: 50px;
+      }
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.03);
+        text-decoration: underline;
+        text-underline-offset: 10%;
+        text-underline-position: from-font;
       }
     }
   }
@@ -597,9 +614,9 @@ body {
 //========================================================================================================================================================
 
 .services {
-  padding-top: 50px;
-  padding-bottom: 75px;
-  scroll-margin-top: 130px;
+  padding-top: 15px;
+  padding-bottom: 55px;
+  scroll-margin-top: 110px;
   @media (max-width: $mobile) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -613,11 +630,11 @@ body {
   }
   // .services__wrap
   &__wrap {
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
-    gap: 90px;
-    @media (max-width: $pc) {
+    gap: 70px;
+    @media (max-width: $tablet) {
       gap: 20px;
     }
     @media (max-width: $mobile) {
@@ -627,17 +644,17 @@ body {
   // .services__wrap-2cols
   &__wrap-2cols {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 650px));
+    grid-template-columns: repeat(2, minmax(300px, 490px));
     justify-content: space-between;
     gap: 20px;
-    @media (max-width: $pc) {
+    @media (max-width: $tablet) {
       grid-template-columns: repeat(1, 1fr);
     }
   }
   // .services__item
   &__item {
     position: relative;
-    padding: 50px 30px;
+    padding: 40px 30px;
     background: rgba(0, 0, 0, 0.3);
 
     backdrop-filter: blur(5px);
@@ -664,7 +681,7 @@ body {
   }
   // .services__item-title
   &__item-title {
-    font-size: 36px;
+    font-size: 27px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -672,12 +689,13 @@ body {
   }
   // .services__list
   &__list {
-    margin-top: 55px;
+    margin-top: 40px;
     text-shadow: 2px 2px 3px #000;
     font-family: "Montserrat";
-    font-size: 34px;
+    font-size: 25px;
     font-weight: 500;
-    padding-inline-start: 40px;
+    padding-inline-start: 30px;
+    line-height: 150%;
     @media (max-width: $tablet) {
       font-size: 32px;
       margin-top: 36px;
@@ -692,7 +710,7 @@ body {
         line-height: 120%;
       }
       &:not(:first-child) {
-        margin-top: 35px;
+        margin-top: 20px;
         @media (max-width: $tablet) {
           margin-top: 16px;
         }
@@ -705,11 +723,11 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 70px;
+  font-size: 53px;
   text-transform: uppercase;
   line-height: 110%;
   text-align: center;
-  @media (max-width: $pc) {
+  @media (max-width: $tablet) {
     font-size: 55px;
   }
   @media (max-width: $mobile) {
@@ -742,9 +760,9 @@ body {
 //========================================================================================================================================================
 
 .packages {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  scroll-margin-top: 130px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  scroll-margin-top: 110px;
   @media (max-width: $mobile) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -758,12 +776,12 @@ body {
   }
   // .packages__wrap
   &__wrap {
-    margin-top: 100px;
+    margin-top: 70px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 650px));
+    grid-template-columns: repeat(2, minmax(300px, 490px));
     justify-content: space-between;
     gap: 40px;
-    row-gap: 100px;
+    row-gap: 75px;
     @media (max-width: $tablet) {
       grid-template-columns: repeat(1, 1fr);
       justify-items: center;
@@ -784,7 +802,7 @@ body {
   }
   // .packages__button
   &__button {
-    margin-top: 50px;
+    margin-top: 35px;
     border-radius: 100px;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
@@ -792,7 +810,7 @@ body {
     width: 100%;
     display: block;
     color: #fff;
-    font-size: 36px;
+    font-size: 27px;
     text-transform: uppercase;
     text-align: center;
     display: flex;
@@ -800,12 +818,12 @@ body {
     align-items: center;
     line-height: 110%;
     border-radius: 100px;
-    padding: 35px 50px;
+    padding: 26px 50px;
     transition: all 0.3s;
     span {
       transition: all 0.3s;
     }
-    @media (max-width: $pc) {
+    @media (max-width: $tablet) {
       font-size: 36px;
     }
     @media (max-width: $mobile) {
@@ -837,8 +855,8 @@ body {
   }
   // .packages__desc
   &__desc {
-    font-size: 40px;
-    margin-top: 100px;
+    font-size: 30px;
+    margin-top: 80px;
     text-transform: uppercase;
     text-align: center;
     line-height: 110%;
@@ -856,9 +874,9 @@ body {
 //========================================================================================================================================================
 
 .partner {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  scroll-margin-top: 130px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  scroll-margin-top: 110px;
   @media (max-width: $mobile) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -872,10 +890,10 @@ body {
   }
   // .partner__wrap
   &__wrap {
-    margin-top: 100px;
+    margin-top: 74px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
     @media (max-width: $mobile) {
       margin-top: 40px;
       gap: 24px;
@@ -885,17 +903,17 @@ body {
   &__item {
   }
   &__subtitle {
-    font-size: 34px;
+    font-size: 26px;
     @media (max-width: $mobile) {
       font-size: 18px;
     }
   }
   // .partner__text
   &__text {
-    margin-top: 30px;
+    margin-top: 22px;
     text-shadow: 2px 2px 3px #000;
     font-family: "Montserrat";
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 120%;
     @media (max-width: $mobile) {
@@ -912,9 +930,9 @@ body {
 //========================================================================================================================================================
 
 .channel {
-  padding-top: 75px;
+  padding-top: 55px;
   padding-bottom: 75px;
-  scroll-margin-top: 130px;
+  scroll-margin-top: 110px;
   @media (max-width: $mobile) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -930,7 +948,7 @@ body {
   &__wrap {
     display: flex;
     gap: 30px;
-    @media (max-width: $pc) {
+    @media (max-width: $tablet) {
       flex-direction: column-reverse;
       align-items: center;
       margin-top: 40px;
@@ -939,8 +957,8 @@ body {
   // .channel__left
   &__left {
     max-width: 920px;
-    margin-top: 100px;
-    @media (max-width: $pc) {
+    margin-top: 70px;
+    @media (max-width: $tablet) {
       margin: 0;
     }
   }
@@ -948,7 +966,7 @@ body {
   &__text {
     text-shadow: 2px 2px 3px #000;
     font-family: "Montserrat";
-    font-size: 36px;
+    font-size: 27px;
     font-weight: 500;
     line-height: 120%;
     @media (max-width: $tablet) {
@@ -960,12 +978,12 @@ body {
   }
   // .channel__buttons
   &__buttons {
-    margin-top: 70px;
+    margin-top: 55px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     align-items: flex-start;
-    @media (max-width: $pc) {
+    @media (max-width: $tablet) {
       align-items: center;
     }
     @media (max-width: $mobile) {
@@ -982,7 +1000,7 @@ body {
   }
   // .channel__image
   &__image {
-    width: 620px;
+    width: 466px;
     height: auto;
 
     @media (max-width: $mobile) {
