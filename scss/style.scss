@@ -300,7 +300,7 @@ body {
     z-index: 3;
     animation: floatX 4s ease-in-out infinite;
     @media (max-width: $tablet) {
-      top: 25%;
+      top: 22%;
       width: 90px;
     }
   }
@@ -313,7 +313,7 @@ body {
     z-index: 3;
     animation: floatY 2s ease-in-out infinite;
     @media (max-width: $tablet) {
-      width: 250px;
+      width: 220px;
       top: 36%;
       left: -90px;
     }
@@ -341,9 +341,9 @@ body {
     z-index: 3;
     animation: floatY 3s ease-in-out infinite;
     @media (max-width: $tablet) {
-      width: 325px;
-      top: 14%;
-      right: -160px;
+      width: 230px;
+      top: 18%;
+      right: -90px;
     }
   }
 
@@ -355,9 +355,9 @@ body {
     z-index: 3;
     animation: floatX 2s ease-in-out infinite;
     @media (max-width: $tablet) {
-      top: 30%;
-      width: 220px;
-      right: -100px;
+      top: 33%;
+      width: 142px;
+      right: -40px;
     }
   }
   &__video {
@@ -402,6 +402,7 @@ body {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      display: block;
       @media (max-width: $tablet) {
         font-size: 60px;
       }
@@ -414,6 +415,9 @@ body {
     }
     @media (max-width: $tablet) {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     &-wrap {
@@ -485,7 +489,7 @@ body {
       margin: 0;
     }
     @media (max-width: $mobile) {
-      width: 300px;
+      width: 340px;
       height: auto;
     }
     img {
@@ -559,9 +563,19 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     transition: all 0.3s;
+    cursor: pointer;
+
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
     img {
       width: 85px;
     }
+
     @media (max-width: $mobile) {
       font-size: 22px;
       margin-top: 60px;
@@ -569,12 +583,14 @@ body {
         width: 70px;
       }
     }
+
     @media (max-width: $mobileSmall) {
       padding: 0 20px 0 0;
       img {
         width: 50px;
       }
     }
+
     @media (any-hover: hover) {
       &:hover {
         transform: scale(1.03);
@@ -647,6 +663,9 @@ body {
     grid-template-columns: repeat(2, minmax(300px, 490px));
     justify-content: space-between;
     gap: 20px;
+    .services__item-title {
+      flex-direction: column;
+    }
     @media (max-width: $tablet) {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -684,8 +703,12 @@ body {
     font-size: 27px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+
+    justify-content: center;
     align-items: center;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
   }
   // .services__list
   &__list {
@@ -748,6 +771,8 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
   }
   @media (max-width: $tablet) {
     font-size: 36px;
