@@ -287,8 +287,9 @@ body {
     z-index: 3;
     animation: floatY 3s ease-in-out infinite;
     @media (max-width: $tablet) {
-      width: 150px;
-      left: -50px;
+      width: 120px;
+      left: -20px;
+      top: 0px;
     }
   }
 
@@ -313,9 +314,9 @@ body {
     z-index: 3;
     animation: floatY 2s ease-in-out infinite;
     @media (max-width: $tablet) {
-      width: 220px;
-      top: 36%;
-      left: -90px;
+      width: 200px;
+      top: 35%;
+      left: -80px;
     }
   }
 
@@ -341,9 +342,9 @@ body {
     z-index: 3;
     animation: floatY 3s ease-in-out infinite;
     @media (max-width: $tablet) {
-      width: 230px;
-      top: 18%;
-      right: -90px;
+      width: 190px;
+      top: 19%;
+      right: -80px;
     }
   }
 

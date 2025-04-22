@@ -420,8 +420,9 @@ body {
 }
 @media (max-width: 991.98px) {
   .hero__coin-top-left {
-    width: 150px;
-    left: -50px;
+    width: 120px;
+    left: -20px;
+    top: 0px;
   }
 }
 .hero__coin-mid-left {
@@ -450,9 +451,9 @@ body {
 }
 @media (max-width: 991.98px) {
   .hero__coin-bottom-left {
-    width: 220px;
-    top: 36%;
-    left: -90px;
+    width: 200px;
+    top: 35%;
+    left: -80px;
   }
 }
 .hero__coin-top-right {
@@ -482,9 +483,9 @@ body {
 }
 @media (max-width: 991.98px) {
   .hero__coin-mid-right {
-    width: 230px;
-    top: 18%;
-    right: -90px;
+    width: 190px;
+    top: 19%;
+    right: -80px;
   }
 }
 .hero__coin-bottom-right {
