@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fire Creo</title>
+    <link rel="shortcut icon" href="./img/fire-ball.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- <header class="header">
+      <div class="header__container">
+        <div class="header__menu menu">
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#home" class="menu__link active">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="#services" class="menu__link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#packages" class="menu__link">Пакеты </a>
+              </li>
+              <li class="menu__item">
+                <a href="#partner" class="menu__link">Сотрудничество</a>
+              </li>
+              <li class="menu__item">
+                <a href="#channel" class="menu__link">Канал</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="menu__icon icon-menu">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header> -->
+    <main>
+      <section id="home" class="hero">
+        <img src="./img/coin-top-left.png" alt="" class="hero__coin-top-left" />
+        <img src="./img/coin-mid-left.png" alt="" class="hero__coin-mid-left" />
+        <img
+          src="./img/coin-bottom-left.png"
+          alt=""
+          class="hero__coin-bottom-left"
+        />
+        <img
+          src="./img/coin-top-right.png"
+          alt=""
+          class="hero__coin-top-right"
+        />
+        <img
+          src="./img/coin-mid-right.png"
+          alt=""
+          class="hero__coin-mid-right"
+        />
+        <img
+          src="./img/coin-bottom-right.png"
+          alt=""
+          class="hero__coin-bottom-right"
+        />
+        <div class="hero__bg">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            data-src="./img/slider-5.mp4"
+            class="video-lazy hero__video"
+          >
+            <source data-src="./img/video.mp4" type="video/mp4" />
+            <source data-src="./img/video.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          <img class="hero__bg-img" src="./img/hero-bg.png" alt="Image" />
+        </div>
+        <div class="hero__container">
+          <div class="hero__top">
+            <div class="hero__left">
+              <h1 class="hero__title">
+                <span>DeepFake</span>
+                <span>и LipSync</span>
+                <span>Креативы</span>
+              </h1>
+              <div class="hero__desc">
+                <span>Создаём реалистичные видео</span> <br />
+                с синхронизацией губ и лицевой анимацией для максимального
+                вовлечения аудитории
+              </div>
+            </div>
+            <div class="hero__right">
+              <img src="./img/fire-ball.png" alt="Image" />
+            </div>
+          </div>
+          <div class="hero__bottom">
+            <div class="hero__items">
+              <div class="hero__item">
+                <div class="hero__item-text">
+                  <span class="yellow-text">Высокая</span><br />
+                  конверсия
+                </div>
+              </div>
+              <div class="hero__item">
+                <div class="hero__item-text">
+                  <span class="yellow-text">Быстрая</span><br />
+                  реализация
+                </div>
+              </div>
+              <div class="hero__item">
+                <div class="hero__item-text">
+                  <span class="yellow-text">Кастомный</span> <br />
+                  подход
+                </div>
+              </div>
+            </div>
+            <button
+              class="hero__button"
+              onclick="window.location.href='https://t.me/fire_creo'"
+              role="link"
+              tabindex="0"
+            >
+              <img src="./img/tg.png" alt="Image" />
+              Заказать креатив
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <div class="works__container">
+          <h2 class="main-title works__title">Примеры работ</h2>
+
+          <div class="swiper works__swiper">
+            <div class="swiper-wrapper works__wrapper">
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-1.mp4"
+                >
+                  <source data-src="./img/slider-1.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-1.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-2.mp4"
+                >
+                  <source data-src="./img/slider-2.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-2.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-3.mp4"
+                >
+                  <source data-src="./img/slider-3.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-3.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-4.mp4"
+                >
+                  <source data-src="./img/slider-4.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-4.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-5.mp4"
+                >
+                  <source data-src="./img/slider-5.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-5.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-1.mp4"
+                >
+                  <source data-src="./img/slider-1.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-1.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-2.mp4"
+                >
+                  <source data-src="./img/slider-2.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-2.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-3.mp4"
+                >
+                  <source data-src="./img/slider-3.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-3.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-4.mp4"
+                >
+                  <source data-src="./img/slider-4.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-4.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide works__card">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  class="video-lazy works__video"
+                  data-src="./img/slider-5.mp4"
+                >
+                  <source data-src="./img/slider-5.mp4" type="video/mp4" />
+                  <source data-src="./img/slider-5.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partner" class="partner">
+        <div class="partner__container">
+          <h2 class="main-title partner__title">FAQ</h2>
+          <div class="partner__wrap">
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">
+                <span>Сколько</span> <span>времени</span> <span>занимает</span>
+                <span>производство?</span>
+              </h3>
+              <p class="partner__text">
+                Обычно 1–2 рабочих дня, в зависимости от сложности проекта.
+              </p>
+            </div>
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">
+                <span>Можно</span> <span>ли</span> <span>внести</span>
+                <span>правки</span> <span>после</span> <span>получения</span>
+                <span>креатива?</span>
+              </h3>
+              <p class="partner__text">
+                Да, мы предоставляем до 3 этапов бесплатных правок.
+              </p>
+            </div>
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">
+                <span>Финальный</span> <span>результат</span>
+                <span>выглядит</span>
+                <span>реалистично?</span>
+              </h3>
+              <p class="partner__text">
+                Креативы выглядят максимально натурально благодаря нейросетевым
+                алгоритмам, точной синхронизации речи и анимации лица.
+              </p>
+            </div>
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">
+                <span>Какие</span> <span>форматы</span> <span>вы</span>
+                <span>предоставляете?</span>
+              </h3>
+              <p class="partner__text">
+                Мы выдаём готовое видео в форматах MP4 (1080p/4K),
+                оптимизированное под TikTok, Meta Ads, YouTube Shorts и другие
+                платформы.
+              </p>
+            </div>
+            <div class="partner__item">
+              <h3 class="common-title partner__subtitle">
+                <span>Бесплатные</span> <span>правки</span>
+              </h3>
+              <p class="partner__text">Возможность вносить 3 этапа правок.</p>
+            </div>
+          </div>
+          <div class="packages__desc yellow-text">
+            Fire Creo — ваш надежный партнер в создании креативов
+          </div>
+        </div>
+      </section>
+
+      <section id="channel" class="channel">
+        <div class="channel__container">
+          <h2 class="main-title channel__title">канал</h2>
+          <div class="channel__wrap">
+            <div class="channel__left">
+              <div class="channel__text">
+                Все актуальные креативы, лучшие кейсы и свежие работы — смотри в
+                нашем канале.
+              </div>
+              <div class="channel__buttons">
+                <button
+                  class="hero__button"
+                  onclick="window.location.href='https://t.me/fire_creo'"
+                  role="link"
+                  tabindex="0"
+                >
+                  <img src="./img/tg.png" alt="Image" />
+                  Перейти на канал
+                </button>
+                <button
+                  class="hero__button"
+                  onclick="window.location.href='https://t.me/firecreomanager'"
+                  role="link"
+                  tabindex="0"
+                >
+                  <img src="./img/tg.png" alt="Image" />
+                  связаться с нами
+                </button>
+              </div>
+            </div>
+            <div class="channel__right">
+              <img src="./img/tg-fire.png" class="channel__image" alt="Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".works__swiper", {
+        slidesPerView: 3,
+        slidesPerGroup: 2,
+        spaceBetween: 50,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 2,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      const videos = document.querySelectorAll(".works__video");
+
+      videos.forEach((video) => {
+        video.addEventListener("click", () => {
+          videos.forEach((v) => {
+            v.muted = true;
+          });
+
+          video.muted = false;
+          video.currentTime = 0;
+          video.play();
+        });
+      });
+
+      swiper.on("transitionEnd", () => {
+        if (window.innerWidth < 640) {
+          videos.forEach((video) => {
+            video.muted = true;
+          });
+
+          const activeSlide = document.querySelector(".swiper-slide-active");
+          const activeVideo = activeSlide?.querySelector("video");
+
+          if (activeVideo) {
+            activeVideo.muted = false;
+            activeVideo.currentTime = 0;
+            activeVideo.play();
+          }
+        }
+      });
+    </script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
