@@ -13,34 +13,6 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="header__container">
-        <div class="header__menu menu">
-          <nav class="menu__body">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#home" class="menu__link active">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a href="#services" class="menu__link">Услуги</a>
-              </li>
-              <li class="menu__item">
-                <a href="#packages" class="menu__link">Пакеты </a>
-              </li>
-              <li class="menu__item">
-                <a href="#partner" class="menu__link">Сотрудничество</a>
-              </li>
-              <li class="menu__item">
-                <a href="#channel" class="menu__link">Канал</a>
-              </li>
-            </ul>
-          </nav>
-          <button type="button" class="menu__icon icon-menu">
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </header> -->
     <main>
       <section id="home" class="hero">
         <img src="./img/coin-top-left.png" alt="" class="hero__coin-top-left" />
@@ -398,19 +370,6 @@
           video.muted = true;
           playButtons[i].style.display = "block";
         });
-
-        if (window.innerWidth < 640) {
-          const activeSlide = document.querySelector(".swiper-slide-active");
-          const activeVideo = activeSlide?.querySelector("video");
-          const activeBtn = activeSlide?.querySelector(".play-btn");
-
-          if (activeVideo && activeBtn) {
-            activeVideo.muted = false;
-            activeVideo.currentTime = 0;
-            activeVideo.play();
-            activeBtn.style.display = "none";
-          }
-        }
       });
     </script>
 
