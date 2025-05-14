@@ -140,10 +140,8 @@
           <div class="swiper works__swiper">
             <div class="swiper-wrapper works__wrapper">
               <div class="swiper-slide works__card">
+                <button class="play-btn"></button>
                 <video
-                  autoplay
-                  muted
-                  loop
                   playsinline
                   preload="none"
                   class="video-lazy works__video"
@@ -155,10 +153,8 @@
                 </video>
               </div>
               <div class="swiper-slide works__card">
+                <button class="play-btn"></button>
                 <video
-                  autoplay
-                  muted
-                  loop
                   playsinline
                   preload="none"
                   class="video-lazy works__video"
@@ -170,10 +166,8 @@
                 </video>
               </div>
               <div class="swiper-slide works__card">
+                <button class="play-btn"></button>
                 <video
-                  autoplay
-                  muted
-                  loop
                   playsinline
                   preload="none"
                   class="video-lazy works__video"
@@ -186,10 +180,8 @@
               </div>
 
               <div class="swiper-slide works__card">
+                <button class="play-btn"></button>
                 <video
-                  autoplay
-                  muted
-                  loop
                   playsinline
                   preload="none"
                   class="video-lazy works__video"
@@ -201,86 +193,8 @@
                 </video>
               </div>
               <div class="swiper-slide works__card">
+                <button class="play-btn"></button>
                 <video
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  preload="none"
-                  class="video-lazy works__video"
-                  data-src="./img/slider-5.mp4"
-                >
-                  <source data-src="./img/slider-5.mp4" type="video/mp4" />
-                  <source data-src="./img/slider-5.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide works__card">
-                <video
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  preload="none"
-                  class="video-lazy works__video"
-                  data-src="./img/slider-1.mp4"
-                >
-                  <source data-src="./img/slider-1.mp4" type="video/mp4" />
-                  <source data-src="./img/slider-1.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide works__card">
-                <video
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  preload="none"
-                  class="video-lazy works__video"
-                  data-src="./img/slider-2.mp4"
-                >
-                  <source data-src="./img/slider-2.mp4" type="video/mp4" />
-                  <source data-src="./img/slider-2.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide works__card">
-                <video
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  preload="none"
-                  class="video-lazy works__video"
-                  data-src="./img/slider-3.mp4"
-                >
-                  <source data-src="./img/slider-3.mp4" type="video/mp4" />
-                  <source data-src="./img/slider-3.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-
-              <div class="swiper-slide works__card">
-                <video
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  preload="none"
-                  class="video-lazy works__video"
-                  data-src="./img/slider-4.mp4"
-                >
-                  <source data-src="./img/slider-4.mp4" type="video/mp4" />
-                  <source data-src="./img/slider-4.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide works__card">
-                <video
-                  autoplay
-                  muted
-                  loop
                   playsinline
                   preload="none"
                   class="video-lazy works__video"
@@ -349,8 +263,11 @@
               <p class="partner__text">Возможность вносить 3 этапа правок.</p>
             </div>
           </div>
-          <div class="packages__desc yellow-text">
-            Fire Creo — ваш надежный партнер в создании креативов
+          <div class="packages__desc">
+            Fire Creo
+            <span class="yellow-text"
+              >— ваш надежный партнер в создании креативов
+            </span>
           </div>
         </div>
       </section>
@@ -398,7 +315,6 @@
         slidesPerView: 3,
         slidesPerGroup: 2,
         spaceBetween: 50,
-        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -424,32 +340,75 @@
       });
 
       const videos = document.querySelectorAll(".works__video");
+      const playButtons = document.querySelectorAll(".play-btn");
 
       videos.forEach((video) => {
-        video.addEventListener("click", () => {
-          videos.forEach((v) => {
-            v.muted = true;
-          });
+        const sources = video.querySelectorAll("source");
+        sources.forEach((source) => {
+          source.src = source.dataset.src;
+        });
+        video.load();
+        video.pause();
+        video.muted = true;
+      });
 
-          video.muted = false;
-          video.currentTime = 0;
+      function toggleVideo(video, btn) {
+        const isPlaying = !video.paused && !video.ended;
+
+        videos.forEach((v, i) => {
+          if (v !== video) {
+            v.pause();
+            v.muted = true;
+            playButtons[i].style.display = "block";
+          }
+        });
+
+        if (isPlaying) {
+          video.pause();
+          btn.style.display = "block";
+        } else {
           video.play();
+          video.muted = false;
+          btn.style.display = "none";
+        }
+      }
+
+      playButtons.forEach((btn, index) => {
+        const video = videos[index];
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          toggleVideo(video, btn);
         });
       });
 
-      swiper.on("transitionEnd", () => {
-        if (window.innerWidth < 640) {
-          videos.forEach((video) => {
-            video.muted = true;
-          });
+      videos.forEach((video, index) => {
+        const btn = playButtons[index];
+        video.addEventListener("click", () => {
+          toggleVideo(video, btn);
+        });
 
+        video.addEventListener("ended", () => {
+          btn.style.display = "block";
+        });
+      });
+
+      swiper.on("transitionStart", () => {
+        videos.forEach((video, i) => {
+          video.pause();
+          video.muted = true;
+          playButtons[i].style.display = "block";
+        });
+
+        if (window.innerWidth < 640) {
           const activeSlide = document.querySelector(".swiper-slide-active");
           const activeVideo = activeSlide?.querySelector("video");
+          const activeBtn = activeSlide?.querySelector(".play-btn");
 
-          if (activeVideo) {
+          if (activeVideo && activeBtn) {
             activeVideo.muted = false;
             activeVideo.currentTime = 0;
             activeVideo.play();
+            activeBtn.style.display = "none";
           }
         }
       });
